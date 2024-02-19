@@ -60,6 +60,12 @@ mvn versions:display-dependency-updates
 
 Make sure you have your LambdaTest credentials with you to run test automation scripts. You can get these credentials from the [LambdaTest Automation Dashboard](https://automation.lambdatest.com/build?utm_source=github&utm_medium=repo&utm_campaign=Java-TestNG-Selenium) or by your [LambdaTest Profile](https://accounts.lambdatest.com/login?utm_source=github&utm_medium=repo&utm_campaign=Java-TestNG-Selenium).
 
+
+**Step 2:** Start the mitm proxy server.
+  ```bash
+mitmproxy -s proxy.py
+  ```
+
 **Step 2:** Set LambdaTest **Username** and **Access Key** in environment variables.
 
 * For **Linux/macOS**:
