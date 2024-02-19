@@ -20,8 +20,8 @@ public class TestNGTodo2 {
 
     @BeforeMethod
     public void setup(Method m, ITestContext ctx) throws MalformedURLException {
-        String username ="shubhamr";
-        String authkey ="dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh";
+        String username ="username";
+        String authkey ="acess_key";
         ;
         
         /*
