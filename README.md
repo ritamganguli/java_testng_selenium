@@ -61,12 +61,17 @@ mvn versions:display-dependency-updates
 Make sure you have your LambdaTest credentials with you to run test automation scripts. You can get these credentials from the [LambdaTest Automation Dashboard](https://automation.lambdatest.com/build?utm_source=github&utm_medium=repo&utm_campaign=Java-TestNG-Selenium) or by your [LambdaTest Profile](https://accounts.lambdatest.com/login?utm_source=github&utm_medium=repo&utm_campaign=Java-TestNG-Selenium).
 
 
-**Step 2:** Start the mitm proxy server.
+**Step 3:** Start the mitm proxy server.
   ```bash
 mitmproxy -s proxy.py
   ```
 
-**Step 2:** Set LambdaTest **Username** and **Access Key** in environment variables.
+**Step 4:** Start the tunnel with mitm and ingress mode and do ensure to put up the proxy port.
+  ```bash
+LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
+  ```
+
+**Step 5:** Set LambdaTest **Username** and **Access Key** in environment variables.
 
 * For **Linux/macOS**:
   
@@ -104,7 +109,7 @@ You can generate capabilities for your test requirements with the help of our in
 
 ### Executing The Test
 
-**Step 4:** The tests can be executed in the terminal using the following command.
+**Step 6:** The tests can be executed in the terminal using the following command.
 
 ```bash
 mvn test -D suite=single.xml
