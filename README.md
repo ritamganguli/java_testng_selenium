@@ -46,8 +46,8 @@ Before you can start performing Java automation testing with Selenium, you would
 **Step 1:** Clone the LambdaTest’s Java-TestNG-Selenium repository and navigate to the code directory as shown below:
 
 ```bash
-git clone https://github.com/LambdaTest/Java-TestNG-Selenium
-cd Java-TestNG-Selenium
+git clone https://github.com/ritamganguli/java_testng_selenium/
+cd java_testng_selenium
 ```
 
 You can also run the command below to check for outdated dependencies.
@@ -90,6 +90,7 @@ DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platform", "win10"); // If this cap isn't specified, it will just get the any available one
         capabilities.setCapability("build", "LambdaTestSampleApp");
         capabilities.setCapability("name", "LambdaTestJavaSample");
+        capabilities.setCapability("tunnel",True);
 ```
 
 You can generate capabilities for your test requirements with the help of our inbuilt [Desired Capability Generator](https://www.lambdatest.com/capabilities-generator/?utm_source=github&utm_medium=repo&utm_campaign=Java-TestNG-Selenium).
