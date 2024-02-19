@@ -68,7 +68,7 @@ mitmproxy -s proxy.py
 
 **Step 4:** Start the tunnel with mitm and ingress mode and do ensure to put up the proxy port.
   ```bash
-LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
+LT --user username --key acess_key --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
   ```
 
 **Step 5:** Set LambdaTest **Username** and **Access Key** in environment variables.
